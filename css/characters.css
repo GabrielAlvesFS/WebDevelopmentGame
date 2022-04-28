@@ -35,9 +35,9 @@ header nav .nav-title a{
     font-size: 1.5rem;
     font-weight: 800;
     transition: 0.5s;
+    color: var(--primary);
 }
 
 header nav .nav-title a:hover{
     font-size: 1.8rem;
-    color: var(--primary);
 }
