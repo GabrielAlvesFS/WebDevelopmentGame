@@ -69,38 +69,38 @@ function whatButton (currentButton) {
         //tratando a url
         urlTreatment(actualUrl)
 
-        if ( urlTreatment(actualUrl) == '/html/characters/characters.html' ) {
+        if ( urlTreatment(actualUrl) == '/WebDevelopmentGame/html/characters/characters.html' ) {
             verifyAnswer('Você tem certeza que deseja seguir está trilha?\n  Digite 1 para Sim!\n  Digite 2 para não!', '2' , '1', './html-character/level01.html', './characters.html')
 
-        } else if ( urlTreatment(actualUrl) == '/html/characters/html-character/level01.html' ){
+        } else if ( urlTreatment(actualUrl) == '/WebDevelopmentGame/html/characters/html-character/level01.html' ){
             verifyAnswer('Qual será a sua resposta?\n  Digite 1 para Opção 01\n  Digite 2 para Opção 02\n  Digite 3 para Opção 03\n  Digite 4 para Opção 04', '4' , '3', './level02.html', '../win-lose/lose.html')
 
-        } else if ( urlTreatment(actualUrl) == '/html/characters/html-character/level02.html' ){
+        } else if ( urlTreatment(actualUrl) == '/WebDevelopmentGame/html/characters/html-character/level02.html' ){
             verifyAnswer('Qual será a sua resposta?\n  Digite 1 para Opção 01\n  Digite 2 para Opção 02\n  Digite 3 para Opção 03\n  Digite 4 para Opção 04', '4' , '4', './level03.html', '../win-lose/lose.html')
 
-        } else if ( urlTreatment(actualUrl) == '/html/characters/html-character/level03.html' ){
+        } else if ( urlTreatment(actualUrl) == '/WebDevelopmentGame/html/characters/html-character/level03.html' ){
             verifyAnswer('Qual será a sua resposta?\n  Digite 1 para Opção 01\n  Digite 2 para Opção 02', '2' , '2', '../win-lose/win.html', '../win-lose/lose.html')
           
 
             
-        } else if ( urlTreatment(actualUrl) == '/html/characters/css-character/level01.html' ){
+        } else if ( urlTreatment(actualUrl) == '/WebDevelopmentGame/html/characters/css-character/level01.html' ){
             verifyAnswer('Qual será a sua resposta?\n  Digite 1 para Opção 01\n  Digite 2 para Opção 02\n  Digite 3 para Opção 03\n  Digite 4 para Opção 04', '4' , '3', './level02.html', '../win-lose/lose.html')
 
-        } else if ( urlTreatment(actualUrl) == '/html/characters/css-character/level02.html' ){
+        } else if ( urlTreatment(actualUrl) == '/WebDevelopmentGame/html/characters/css-character/level02.html' ){
             verifyAnswer('Qual será a sua resposta?\n  Digite 1 para Opção 01\n  Digite 2 para Opção 02\n  Digite 3 para Opção 03\n  Digite 4 para Opção 04', '4' , '1', './level03.html', '../win-lose/lose.html')
 
-        } else if ( urlTreatment(actualUrl) == '/html/characters/css-character/level03.html' ){
+        } else if ( urlTreatment(actualUrl) == '/WebDevelopmentGame/html/characters/css-character/level03.html' ){
             verifyAnswer('Qual será a sua resposta?\n  Digite 1 para Opção 01\n  Digite 2 para Opção 02\n  Digite 3 para Opção 03\n  Digite 4 para Opção 04', '4' , '1', '../win-lose/win.html', '../win-lose/lose.html')
 
 
             
-        } else if ( urlTreatment(actualUrl) == '/html/characters/js-character/level01.html' ){
+        } else if ( urlTreatment(actualUrl) == '/WebDevelopmentGame/html/characters/js-character/level01.html' ){
             verifyAnswer('Qual será a sua resposta?\n  Digite 1 para Opção 01\n  Digite 2 para Opção 02\n  Digite 3 para Opção 03\n  Digite 4 para Opção 04', '4' , '3', './level02.html', '../win-lose/lose.html')
 
-        } else if ( urlTreatment(actualUrl) == '/html/characters/js-character/level02.html' ){
+        } else if ( urlTreatment(actualUrl) == '/WebDevelopmentGame/html/characters/js-character/level02.html' ){
             verifyAnswer('Qual será a sua resposta?\n  Digite 1 para Opção 01\n  Digite 2 para Opção 02\n  Digite 3 para Opção 03\n  Digite 4 para Opção 04', '4' , '2', './level03.html', '../win-lose/lose.html')
 
-        } else if ( urlTreatment(actualUrl) == '/html/characters/js-character/level03.html' ){
+        } else if ( urlTreatment(actualUrl) == '/WebDevelopmentGame/html/characters/js-character/level03.html' ){
             verifyAnswer('Qual será a sua resposta?\n  Digite 1 para Opção 01\n  Digite 2 para Opção 02', '2' , '2', '../win-lose/win.html', '../win-lose/lose.html')
           
             
@@ -126,7 +126,6 @@ function buttonClicked () {
         
         //função que capta qual botão foi clicado
         buttons[i].onclick = function(){
-            console.log(buttons[i])
 
             currentButton = i
             //Função que pega o botão clicado, dependendo do botão que foi clicado vai executar uma coisa diferente
