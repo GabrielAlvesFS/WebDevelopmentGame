@@ -28,7 +28,7 @@ function verifyAnswer(messageOnPrompt, numberOfOptions, rightAnswer, nextUrl, th
             }else if( playerChoice == wrongQuestion[i]) {
                 location.href=(thisUrl)
 
-            }else if (playerChoice >= wrongQuestion.length) {
+            }else if (playerChoice != wrongQuestion[i]) {
                 alert('Opção Inválida, digite apenas o número da questão que você acha que está correta!') 
                 break
             }
